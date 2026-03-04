@@ -1,13 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tahyra & Amelia's 20th Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="birthday-pattern"></div>
+    <div class="birthday-cream-bg"></div>
 
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+
+    <main>
+        <section class="hero">
+            <div class="big-number">20</div>
+            
+            <div class="hero-content">
+                <div class="badge">
+                    <i data-lucide="party-popper"></i>
+                    <span>Birthday Bash!</span>
+                    <i data-lucide="party-popper"></i>
+                </div>
+
+                <h1>Tahyra <span class="purple-text">&</span> Amelia</h1>
+
+                <div class="title-box">
+                    <h2>Turning 20!</h2>
+                </div>
+
+                <p class="subtitle">We're leaving our teens behind! Come celebrate a fun afternoon in the garden with us.</p>
+                
+                <div class="countdown" id="countdown">
+                    <div class="time-block">
+                        <div class="glass"><span id="days">00</span></div>
+                        <span>DAYS</span>
+                    </div>
+                    <div class="time-block">
+                        <div class="glass"><span id="hours">00</span></div>
+                        <span>HOURS</span>
+                    </div>
+                    <div class="time-block">
+                        <div class="glass"><span id="minutes">00</span></div>
+                        <span>MINS</span>
+                    </div>
+                    <div class="time-block">
+                        <div class="glass"><span id="seconds">00</span></div>
+                        <span>SECS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="grid">
+                <div class="info">
+                    <div class="tag"><i data-lucide="cake"></i> The Party Plan</div>
+                    <h2 class="section-title">Where & When</h2>
+                    <p class="quote">"Casual pero cu ambiente"</p>
+                    
+                    <div class="card-list">
+                        <div class="info-card">
+                            <div class="icon-wrap pink"><i data-lucide="calendar"></i></div>
+                            <div>
+                                <h3>Friday, March 6</h3>
+                                <p>Party starts at 4:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-wrap blue"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <h3>Vaartsche Rijn</h3>
+                                <p>Flamingostraat 34 BIS</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="icon-wrap purple"><i data-lucide="music"></i></div>
+                            <div>
+                                <h3>The Vibe</h3>
+                                <p>Great Food • Good Music • 20th Vibes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-container">
+                    <div class="sticker-border">
+                        <img src="/bday-girls.JPG" alt="Birthday Vibe">
+                        <p class="caption">Double the fun, double the 20!</p>
+                    </div>
+                    <div class="sticker-20">20!</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp" id="rsvp-section">
+            <div class="rsvp-icon"><i data-lucide="gift"></i></div>
+            <h2>Coming?</h2>
+            <p>We can't wait to party with you! Let us know if you're making it.</p>
+            
+            <button id="rsvp-button" class="btn-primary">HELL YEAH!</button>
+            
+            <div id="rsvp-success" class="hidden">
+                <div class="success-icon"><i data-lucide="check-circle-2"></i></div>
+                <h3>You're in!</h3>
+                <p>Get ready for the best afternoon ever.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        TAHYRA & AMELIA • THE BIG 20 • 2026
+    </footer>
+
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
